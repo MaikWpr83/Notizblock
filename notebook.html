@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="img/png" href="img/logo.jpg">
+
+    <script src="notebook.js"></script>
+
+    <title>Notizbuch</title>
+</head>
+<body onload="render()">
+
+    <div class="header">
+        <div class="header-ueberschrift">
+            <img src="img/logo.jpg" alt="">
+            <h1>MeineNotizen</h1>
+        </div>
+    </div>
+
+    <div class="note">
+
+        <input id="title" type="text" placeholder="Gib hier einen neuen Titel ein...">
+        <textarea id="text" cols="30" rows="10" placeholder="Deine Notizen..."></textarea>
+    
+        <div class="button">
+           <a href="#"><img onclick="addNote()" src="img/save.svg" alt=""></a>
+        </div>
+    
+    </div>
+    
+    <div id="notizen" class="notes"></div>
+    
+</body>
+</html>

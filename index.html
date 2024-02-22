@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="./img/logo.jpg">
+
+    <script src="script.js"></script>
+
+    <title>Notebook</title>
+
+</head>
+
+<body onload="renderNotes()">
+
+    <header class="header">
+        <div class="logoNote">
+            <img class="logoheader" src="img/logo.jpg" alt="Meine Notizen">
+            <h1>Meine Notizen</h1>
+        </div>
+
+        <nav class="recycleBin">
+            <a href="recycleBin.html" class="recycleBin"><img src="img/recycleBin.png" alt="recycleBin"></a>
+        </nav>
+    </header>
+
+    <section class="noteEntry">
+
+        <div class="noteEntryField">
+            <input id="title" class="noteInput" type="text" placeholder="Betreff">
+            <textarea type="text" id="note" class="noteText" placeholder="Notiz schreiben..."></textarea>
+            
+            <div class="noteButton">
+                <img class="noteAdd" src="./img/save.svg" alt="" onclick="addNote()">
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="createdNote" id="content"></section>
+
+</body>
+
+</html>

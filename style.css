@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+img {
+    width: 32px;
+}
+
+h1{
+    font-size: 32px;
+    color: darkviolet;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   font-weight: bold;
+    color: #FCFBF0;
+    padding: 8px 16px;
+    box-shadow: 0px 1px 5px #FCFBF0;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.logoNote {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.recycleBin{
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.recycleBin img:hover {
+    transform: rotate(45deg);
+}
+
+.backArrow {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.backArrow img:hover {
+    transform: rotate(-90deg);
+}
+
+.noteEntry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 50px;
+    border: 2px solid #FCFBF0;
+    box-shadow: 5px 5px 5px lightcyan;
+    background-color: #46cbc3;
+}
+
+.noteEntryField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    padding: 24px;
+    width: 500px;
+}
+
+.noteInput {
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    padding: 8px;
+}
+
+.noteInput:hover {
+    background-color: rgb(218, 234, 255);
+}
+
+.noteText {
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+    border: none;
+    padding: 8px;
+    transition: all 2s;
+}
+
+.noteText:hover {
+    background-color: rgb(218, 234, 255);
+}
+
+.noteButton{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.noteAdd {
+    padding-top: 25px;
+    height: 24px;
+    width: 24px;
+}
+
+.noteAdd:hover {
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.createdNote {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.notes {
+    white-space: pre-wrap;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 5px solid #FCFBF0;
+    margin: 16px;
+    padding: 8px;
+    width: 250px;
+    height: auto;
+    background-color: lightgray;
+    margin-top: 50px;
+}
+
+@media(max-width: 800px) {
+    .noteEntry{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media(max-width: 500px) {
+    h1{
+        font-size: 24px;
+    }
+
+    .recycleBin {
+        padding-right: 10px;
+        padding-top: 16px;
+    }
+
+    img{
+        width: 24px;
+    }
+
+    .noteEntry{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .noteEntryField {
+        font-size: 16px;
+        padding: 16px;
+        width: 200px;
+    }
+}
+
+@media(max-width: 400px) {
+    .header {
+        display: block;
+        text-align: end;
+        margin-bottom: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+
+    .logoNote {
+        display: flex;
+        justify-content: center;
+    }
+}
